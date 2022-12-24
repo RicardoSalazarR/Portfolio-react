@@ -1,0 +1,296 @@
+* {
+  text-align: justify;
+}
+
+.me-auto {
+  display: flex;
+  justify-content: end;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+#root,
+.App {
+  height: 100%;
+}
+
+/* --------------------------------NAV COMPONENT------------------------------------------------ */
+.nav {
+  background-color: #fef2f2;
+  position: fixed;
+  width: 100%;
+  justify-content: end;
+  z-index: 10;
+}
+
+/* --------------------------------HOME COMPONENT------------------------------------------------ */
+.Home-container {
+  padding-top: 2rem;
+  background-color: #FEF2F2;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 50%;
+  padding: 2rem 0 2rem 0;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.title-container>.icons {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.title-container>.icons>box-icon {
+  background-color: coral;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 5px;
+}
+
+.img-container {
+  width: 50%;
+  max-width: 200px;
+  margin: auto;
+  position: relative;
+}
+
+.background-img {
+  background-color: rgba(255, 0, 0, 0.723);
+  width: 55vw;
+  max-width: 100%;
+  height: 55vw;
+  max-height: 200px;
+  border-radius: 50%;
+  margin: 50px auto 0 auto;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 0;
+}
+
+.img-container>img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.text {
+  color: #939393;
+}
+
+/* --------------------------------ABOUT ME COMPONENT------------------------------------------------ */
+
+.AboutMe-container {
+  padding: 3.5rem 1rem 0 1rem;
+}
+
+.title {
+}
+
+/* --------------------------------ABLITIES COMPONENT------------------------------------------------ */
+.abilities-section {
+  padding: 3.5rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.abilities {
+  width: 100%;
+  display: flex;
+  overflow-y: scroll;
+  padding: 0 0 0 1rem;
+
+}
+
+.abilitie-card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 12px;
+  min-width: 50%;
+  border: solid black 0.5px;
+  border-radius: 10px;
+  margin: 0 0.7rem 0 0.7rem;
+
+}
+
+.abilitie-card-header {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+/* --------------------------------EXPERIENCE COMPONENT------------------------------------------------ */
+
+
+/* --------------------------------PORTFOLIO COMPONENT------------------------------------------------ */
+
+.portfolio-container {
+  padding: 3.5rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projects-cards-container {
+  display: flex;
+  overflow-y: scroll;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  align-items: center;
+  border: solid black 0.5px;
+  border-radius: 10px;
+
+  min-width: 90%;
+  margin: 1rem;
+
+}
+
+.project-card>img {
+  width: 90%;
+}
+
+/* --------------------------------CONTACT COMPONENT------------------------------------------------ */
+.contact-sec {
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+.contact>box-icon {
+  background-color: coral;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 6px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------------------------------Responsive------------------------------------------------ */
+@media screen and (min-width: 600px) {
+
+  /* --------------------------------NAV COMPONENT------------------------------------------------ */
+  .nav {
+    padding-right: 4rem;
+  }
+
+  /* --------------------------------HOME COMPONENT------------------------------------------------ */
+  .Home-container {
+    padding-top: 6rem;
+    display: flex;
+  }
+
+  .title-container {
+    padding: 0;
+    margin: 40px auto 0 auto;
+    width: 25%;
+  }
+
+  .title-container>.icons {
+    width: 80%;
+  }
+
+  .title-container>.icons>box-icon {}
+
+  .img-container {}
+
+  .background-img {}
+
+  .img-container>img {}
+
+  .text {}
+
+  /* --------------------------------ABOUT ME COMPONENT------------------------------------------------ */
+
+  .AboutMe-container {}
+
+  .title {}
+
+  /* --------------------------------ABLITIES COMPONENT------------------------------------------------ */
+  .abilities-section {}
+
+  .abilities {}
+
+  .abilitie-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 12px;
+    min-width: 30%;
+    border: solid black 0.5px;
+    border-radius: 10px;
+    margin: 0 0.7rem 0 0.7rem;
+  }
+
+  .abilitie-card-header {}
+
+  .abilitie-card-content {}
+
+  /* --------------------------------EXPERIENCE COMPONENT------------------------------------------------ */
+
+
+  /* --------------------------------PORTFOLIO COMPONENT------------------------------------------------ */
+
+  .portfolio-container {
+    height: 70%;
+    width: 100%;
+  }
+
+  .projects-cards-container {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .project-card {
+    height: 80%;
+    min-width: 40%;
+    width: 40%;
+
+  }
+
+  .project-card>img {
+    height: 80%;
+    width: 80%;
+
+  }
+
+  /* --------------------------------CONTACT COMPONENT------------------------------------------------ */
+  .contact-sec {}
+
+  .contact>box-icon {}
+
+  .contact-container {}
+
+  .contact {}
+}
